@@ -212,3 +212,18 @@ hr {
 .site-footer a:hover { color: var(--accent); }
 
 .footer-links { display: flex; flex-wrap: wrap; gap: 1.125rem; }
+
+/* Skip link */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.625rem 1rem;
+  border-radius: 0 0 6px 0;
+  z-index: 10;
+}
+
+.skip-link:focus { left: 0; }
